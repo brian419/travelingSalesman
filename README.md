@@ -1,7 +1,7 @@
 
 # Traveling Salesman Problem Solver
 
-This C++ program implements three algorithms to solve the Traveling Salesman Problem (TSP): Nearest Neighbor, 2-Opt Swap, and Lattice Annealing.
+This C++ program implements three algorithms to solve for a solution for and instance of the Traveling Salesman Problem (TSP): Nearest Neighbor, 2-Opt Swap, and Lattice Annealing.
 
 ## Table of Contents
 
@@ -20,16 +20,18 @@ This program demonstrates three different algorithms to solve the TSP and provid
 
 ## Usage
 
-1. Ensure you have a graph file named `size10.graph` in the same directory as the executable. The graph file should contain the distances between cities.
+1. Ensure you have a graph file named such as 'size100.graph' in the same directory as the executable. The graph file should contain the distances between cities. The class was given the graphs of size100 and size1000.graph files.
+   
 2. Compile the program using a C++ compiler. For example:
 
    ```
-   g++ -o tsp_solver tsp_solver.cpp
+   g++ -std=c++11 better_traveling.cpp
    ```
+   
 3. Run the compiled executable:
 
    ```
-   ./tsp_solver
+   ./a.out
    ```
 
 ## Algorithms Used
@@ -44,7 +46,7 @@ The 2-Opt Swap algorithm attempts to improve the initial solution by iteratively
 
 ### Lattice Annealing Algorithm
 
-The Lattice Annealing algorithm is a variant of simulated annealing that randomly swaps pairs of edges based on a temperature parameter. As the temperature decreases, the likelihood of accepting swaps that increase the total distance decreases, leading to a more optimal solution.
+The Lattice Annealing algorithm is a variant of simulated annealing that randomly swaps pairs of edges based on a temperature parameter. As the temperature decreases, the likelihood of accepting swaps that increase the total distance decreases, leading to a more optimal solution than previously. 
 
 ## Code Structure
 
@@ -69,5 +71,3 @@ Time taken: 500 milliseconds
 ```
 
 Adjust the parameters and algorithms as needed for different problem sizes and optimization requirements.
-
-Feel free to modify the code, input files, and parameters to suit your specific TSP instances and optimization goals.
