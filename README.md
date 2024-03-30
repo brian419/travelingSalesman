@@ -1,3 +1,4 @@
+
 # Traveling Salesman Problem Solver
 
 This C++ program implements three algorithms to solve the Traveling Salesman Problem (TSP): Nearest Neighbor, 2-Opt Swap, and Lattice Annealing.
@@ -22,12 +23,14 @@ This program demonstrates three different algorithms to solve the TSP and provid
 1. Ensure you have a graph file named `size10.graph` in the same directory as the executable. The graph file should contain the distances between cities.
 2. Compile the program using a C++ compiler. For example:
 
+   ```
    g++ -o tsp_solver tsp_solver.cpp
-   
+   ```
 3. Run the compiled executable:
-   
-   ./tsp_solver
 
+   ```
+   ./tsp_solver
+   ```
 
 ## Algorithms Used
 
@@ -59,17 +62,12 @@ The input graph file (`size10.graph` in this case) should follow a specific form
 
 After running the program, it will output the optimized path, optimized cost, and the time taken to find the solution in milliseconds.
 
+```
 Optimized path: 0 1 2 3 4 5 6 7 8 9 0
 Optimized cost: 1234
 Time taken: 500 milliseconds
-
-
+```
 
 Adjust the parameters and algorithms as needed for different problem sizes and optimization requirements.
 
 Feel free to modify the code, input files, and parameters to suit your specific TSP instances and optimization goals.
-
-
-
-
-
