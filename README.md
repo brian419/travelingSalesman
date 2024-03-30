@@ -1,4 +1,4 @@
-[better_traveling.cpp]
+[better_traveling.cpp](README.md)
 
 # Traveling Salesman Problem Solver
 
